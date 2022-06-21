@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #f3e5b5;
+}
+
+.search {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.search_recipe {
+  position: relative;
+  margin-right: 20px;
+}
+
+.search_recipe_box {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.search_recipe_allow {
+  position: absolute;
+  right: 5%;
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  border-top: 2px solid #787878;
+  border-right: 2px solid #787878;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+}
+
+.search_recipe_allow:hover {
+  cursor: pointer;
+}
+
+.search_recipe_menu {
+  position: absolute;
+  top: 70px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 400px;
+  height: 250px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.search_recipe_menu_title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.search_recipe_menu_keyword {
+  margin: 5px 10px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.search_recipe_menu_inkeyword {
+  margin: 5px 10px;
+}
+
+.search_recipe_menu_notinkeyword {
+  margin: 10px;
+}
+
+.search_recipe_menu_material {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.search_recipe_menu_inmaterial {
+  margin: 5px 10px;
+}
+
+.search_recipe_menu_notinmaterial {
+  margin: 5px 10px;
+}
+
+.search_button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.dawn {
+  top: -5px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.up {
+  top: 0px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.hyde {
+  display: none;
+}
+
+.recipes {
+  width: 70%;
+  height: 100vh;
+  background-color: #fff;
+  margin: 10px auto 0 auto;
+  border: 1px solid #000;
+}
+
+.recipes_title {
+  font-size: 100px;
+  text-align: center;
+}
+
+.recipes_slide {
+  position: relative;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recipes_slide img {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+.recipes_slide img:not(:first-child) {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
