@@ -5,7 +5,7 @@ function init(){
     let title, cookImg, processes, materials;
 
     $.ajax({
-        url: 'js/recipes.json',
+        url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
@@ -26,10 +26,7 @@ function init(){
     });
 }
 
-function getParam(parm, url) {
-    if(!url){
-        url = window.location.href;
-    }
+function getParam(parm, url = window.location.href) {
     parm = parm.replace(/[\[\]]/g, '\\$&');
     let regex = new RegExp(`[?&]${parm}(=([^&#]*)|&|#|$)`),
         results = regex.exec(url);

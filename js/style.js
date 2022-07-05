@@ -1,12 +1,3 @@
-//a要素のNodelistを取得
-const anchorLinks = document.getElementsByClassName('test');
-//取得されたa要素の数
-const anchorLinksNum = anchorLinks.length;
-//すべてのa要素にイベントリスナーを登録
-for(let i = 0; i < anchorLinksNum; i++){
-    anchorLinks[i].addEventListener('click', ag2send);
-}
-
 window.addEventListener('load', init);
 
 function init() {
@@ -19,5 +10,5 @@ function init() {
 
 function pageTransition(e) {
     console.log(e.path[0].id);
-    document.location.href = `http://localhost/recipe.html?id=${e.path[0].id}`;
+    document.location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
 }
