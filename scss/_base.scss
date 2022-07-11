@@ -1,3 +1,17 @@
+// メディアクエリ定義
+$breakpoint: ( 
+  lg: 'screen and (max-width: 1200px)',
+  md: 'screen and (max-width: 768px)',
+  mn: 'screen and (max-width: 425px)',
+) !default;
+
+//mixinを定義（初期値はmd）
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
 // 背景色用変数
 $back-ground: #fefbf8;
 $footer-back-ground: #fefcfd;

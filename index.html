@@ -6,95 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSCP</title>
     <!-- css -->
-    <!-- <link rel='stylesheet' href='/https://unpkg.com/ress/dist/ress.min.css'> -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="./js/jQuery.js"></script>
     <script type="text/javascript" src="./js/style.js"></script>
-
 </head>
 <body>
-    <header>
-        <div class="search">
-            <span class="search_recipe">
-                <input type="search" class="search_recipe_box" placeholder="食材を入力してください。">
-                <div class="search_recipe_allow dawn"></div>
-                <div class="search_recipe_menu hyde">
-                    <h1 class="search_recipe_menu_title">詳細検索</h1>
-                    <p class="search_recipe_menu_keyword">キーワード</p>
-                    <input type="text" class="search_recipe_menu_inkeyword">を含む <br>
-                    <input type="text" class="search_recipe_menu_notinkeyword">を含まない <br>
-                    <p class="search_recipe_menu_material">材料</p>
-                    <input type="text" class="search_recipe_menu_inmaterial">を含む <br>
-                    <input type="text" class="search_recipe_menu_notinmaterial">を含まない <br>
-                </div>
-            </span>
-            <button type="button" class="search_button">レシピ検索</button>
-        </div>
-    </header>
+    <header></header>
     <div class="recipes">
-        <!-- <div class="recipes_slide">
-            <img src="images/img_001.webp" id="img_001">
-            <img src="images/img_002.webp" id="img_002">
-            <img src="images/img_003.webp" id="img_003">
-            <img src="images/img_004.webp" id="img_004">
-        </div> -->
         <div class="test" id="0">0</div>
         <div class="test" id="1">1</div>
         <div class="test" id="2">2</div>
         <div class="test" id="3">3</div>
-        <!-- <form  action="test.php" method="get">
-
-        </form> -->
-
-<!-- <div class="col_2">
-	<div>
-		ここに内容
-	</div>
-	<div>
-		ここに内容
-	</div>
-	<div>
-		ここに内容
-	</div>
-	<div>
-		ここに内容
-	</div>
-</div> -->
-    <!-- </div> -->
-    <div >
-        <div class="col_2" style="
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-        ">
-            <div style="
-            width: 30%;
-            padding: 10px;
-        ">
-                ここに内容
-            </div>
-            <div style="
-            width: 30%;
-            padding: 10px;
-        ">
-                ここに内容
-            </div>
-            <div style="
-            width: 30%;
-            padding: 10px;
-        ">
-                ここに内容
-            </div>
-            <div style="
-            width: 30%;
-            padding: 10px;
-        ">
-                ここに内容
-            </div>
-        </div>
     </div>
+    <footer></footer>
+    <script>
+        $('header').load('header.html');
+        $('footer').load('footer.html');
+    </script>
 </body>
 </html>
