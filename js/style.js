@@ -10,5 +10,6 @@ function init() {
 
 function pageTransition(e) {
     console.log(e.path[0].id);
-    document.location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
+    // document.location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
+    document.location.href = `http://localhost/recipe.html?id=${e.path[0].id}`;
 }

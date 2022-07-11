@@ -5,7 +5,8 @@ function init(){
     let title, cookImg, processes, materials;
 
     $.ajax({
-        url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
+        // url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
+        url: 'js/recipes.json',
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
@@ -79,6 +80,7 @@ function createElement(cookImg, title, processes, materials) {
     let detail = document.getElementById('detail');
     for(let key in processes) {
         let processElement = document.createElement('li');
+        processElement.className = 'recipe_detail_ul_list'
         processElement.innerHTML = `${key[0]}<br>`;
 
         let processImgElement = document.createElement('img');
@@ -91,3 +93,17 @@ function createElement(cookImg, title, processes, materials) {
     }
 
 }
+
+$(function () {
+    $(window).scroll(function () {
+      const windowHeight = $(window).height();
+      const scroll = $(window).scrollTop();
+  
+      $('.recipe_detail_ul_list').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scroll > targetPosition - windowHeight + 100) {
+          $(this).addClass('fadein');
+        }
+      });
+    });
+});

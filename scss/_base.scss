@@ -1,18 +1,27 @@
 // 背景色用変数
-$back-ground: #FEFBF8;
-$footer-back-ground: #FEFCFD;
-$text-back-ground: #FFFFFF;
+$back-ground: #fefbf8;
+$footer-back-ground: #fefcfd;
+$text-back-ground: #ffffff;
 
 // 文字色用変数
-$text-color: #40414D;
+$text-color: #40414d;
 
 // ラインカラー変数
-$line1: #F49F2B;
-$line2: #ED7332;
-$line3: #B7D44B;
+$line1: #f49f2b;
+$line2: #ed7332;
+$line3: #b7d44b;
 
 // フォント用変数
 
 // 游明朝体 Demibold
 $text-font-family: "游明朝", "YuMincho", serif;
 $text-font-weight: bold;
+
+body {
+  background-color: $back-ground;
+  color: $text-color;
+}
+
+footer {
+  background-color: $footer-back-ground;
+}
