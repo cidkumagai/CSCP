@@ -94,6 +94,7 @@ function createElement(cookImg, title, processes, materials) {
 
 }
 
+// フェードイン
 $(function () {
     $(window).scroll(function () {
       const windowHeight = $(window).height();
@@ -105,5 +106,11 @@ $(function () {
           $(this).addClass('fadein');
         }
       });
+    //   $('.recipe_detail_ul_list').each(function () {
+    //     const targetPosition = $(this).offset().top;
+    //     if (scroll < targetPosition - windowHeight + 100) {
+    //       $(this).removeClass('fadein');
+    //     }
+    //   });
     });
 });
