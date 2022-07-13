@@ -1,14 +1,14 @@
 // メディアクエリ定義
-$breakpoint: ( 
+$breakpoint: (
   lg: 'screen and (max-width: 1200px)',
   md: 'screen and (max-width: 768px)',
   mn: 'screen and (max-width: 425px)',
-) !default;
+  ) !default;
 
 //mixinを定義（初期値はmd）
 @mixin mq($bp) {
   @media #{map-get($breakpoint, $bp)} {
-   @content;
+    @content;
   }
 }
 
@@ -28,7 +28,9 @@ $line3: #b7d44b;
 // フォント用変数
 
 // 游明朝体 Demibold
-$text-font-family: "游明朝", "YuMincho", serif;
+$text-font-family: "游明朝",
+  "YuMincho",
+  serif;
 $text-font-weight: bold;
 
 body {
