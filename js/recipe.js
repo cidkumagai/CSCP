@@ -106,11 +106,5 @@ $(function () {
           $(this).addClass('fadein');
         }
       });
-    //   $('.recipe_detail_ul_list').each(function () {
-    //     const targetPosition = $(this).offset().top;
-    //     if (scroll < targetPosition - windowHeight + 100) {
-    //       $(this).removeClass('fadein');
-    //     }
-    //   });
     });
 });

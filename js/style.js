@@ -66,3 +66,35 @@ function createElement(cookImg, title, comment, id) {
     let recipeList = document.getElementById('recipe_list');
     recipeList.appendChild(recipeListItem);
 }
+
+$(function () {
+    $(window).scroll(function () {
+      const windowHeight = $(window).height();
+      const scroll = $(window).scrollTop();
+  
+      $('.index_flex_title').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scroll > targetPosition - windowHeight + 100) {
+          $('.index_flex_title_text').addClass('write_verticle');
+        }
+      });
+      $('.index_flex_pic').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scroll > targetPosition - windowHeight + 100) {
+          $(this).addClass('fadein');
+        }
+      });
+      $('.index_cscp_text').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scroll > targetPosition - windowHeight + 100) {
+          $(this).addClass('fadein');
+        }
+      });
+      $('.index_recipe_list_item').each(function () {
+        const targetPosition = $(this).offset().top;
+        if (scroll > targetPosition - windowHeight + 100) {
+          $(this).addClass('fadein');
+        }
+      });
+    });
+});
