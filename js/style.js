@@ -72,12 +72,12 @@ $(function () {
       const windowHeight = $(window).height();
       const scroll = $(window).scrollTop();
   
-      $('.index_flex_title').each(function () {
-        const targetPosition = $(this).offset().top;
-        if (scroll > targetPosition - windowHeight + 100) {
-          $('.index_flex_title_text').addClass('write_verticle');
-        }
-      });
+    //   $('.index_flex_title').each(function () {
+    //     const targetPosition = $(this).offset().top;
+    //     if (scroll > targetPosition - windowHeight + 100) {
+    //       $('.index_flex_title_text').addClass('write_verticle');
+    //     }
+    //   });
       $('.index_flex_pic').each(function () {
         const targetPosition = $(this).offset().top;
         if (scroll > targetPosition - windowHeight + 100) {
