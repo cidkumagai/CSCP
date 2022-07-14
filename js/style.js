@@ -54,7 +54,7 @@ function createElement(cookImg, title, comment, id) {
     // ページ遷移部分作成
     let moreElement = document.createElement('div');
     moreElement.className = 'index_recipe_list_item_more';
-    moreElement.id = id
+    moreElement.id = +id
     moreElement.innerHTML = 'MORE';
     moreElement.addEventListener('click', pageTransition);
 
