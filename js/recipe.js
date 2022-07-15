@@ -10,6 +10,7 @@ function init(){
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
+            data = JSON.parse(data);
             title = data[id]['title'];
             cookImg = data[id]['cookImg'];
             processes = data[id]['processes'];
