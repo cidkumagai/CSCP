@@ -5,7 +5,6 @@ function init(){
     let title, cookImg, processes, materials;
 
     $.ajax({
-        // url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
         url: 'js/recipes.json',
         type: 'GET',
         contentType: 'application/json',
