@@ -7,7 +7,7 @@ function init() {
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
-            data = JSON.parse(data);
+            // data = JSON.parse(data);
             for(let i = 0; i < data.length; i++) {
                 title = data[i]['title'];
                 cookImg = data[i]['cookImg'];
