@@ -28,7 +28,7 @@ function init() {
 
 function pageTransition(e) {
     // location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
-    location.href = `https://cidkumagai.github.io/CSCP/recipe.html?id=${e.path[0].id}`;
+    location.href = `./recipe.html?id=${e.path[0].id}`;
 }
 
 function createElement(cookImg, title, comment, id) {    
