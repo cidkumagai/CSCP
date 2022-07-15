@@ -2,8 +2,8 @@ window.addEventListener('load', init);
 
 function init() {
     $.ajax({
-        // url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
-        url: 'js/recipes.json',
+        url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
+        // url: 'js/recipes.json',
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
@@ -27,8 +27,8 @@ function init() {
 }
 
 function pageTransition(e) {
-    // document.location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
-    document.location.href = `https://cidkumagai.github.io/CSCP/recipe.html?id=${e.path[0].id}`;
+    location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
+    // document.location.href = `https://cidkumagai.github.io/CSCP/recipe.html?id=${e.path[0].id}`;
 }
 
 function createElement(cookImg, title, comment, id) {    
