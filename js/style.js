@@ -34,7 +34,7 @@ function pageTransition(e) {
         // window.location.href = 'パス名'; // 通常の遷移
         window.open(`./recipe.html?id=${e.target.id}`, '_blank'); // 新しいタブを開き、ページを表示
     }catch(e) {
-        alert(e.message);
+        // alert(e.message);
     }
 }
 
