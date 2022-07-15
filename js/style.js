@@ -2,8 +2,8 @@ window.addEventListener('load', init);
 
 function init() {
     $.ajax({
-        url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
-        // url: 'js/recipes.json',
+        // url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
+        url: 'js/recipes.json',
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
