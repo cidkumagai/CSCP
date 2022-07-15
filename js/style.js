@@ -29,7 +29,9 @@ function init() {
 
 function pageTransition(e) {
     // location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
-    location.href = `./recipe.html?id=${e.path[0].id}`;
+    window.location.href = `./recipe.html?id=${e.path[0].id}`;
+    // window.location.href = 'パス名'; // 通常の遷移
+    window.open(`./recipe.html?id=${e.path[0].id}`, '_blank'); // 新しいタブを開き、ページを表示
 }
 
 function createElement(cookImg, title, comment, id) {    
