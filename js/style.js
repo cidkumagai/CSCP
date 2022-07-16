@@ -31,7 +31,6 @@ function pageTransition(e) {
       window.location.href = `./recipe.html?id=${e.target.id}`;
       window.open(`./recipe.html?id=${e.target.id}`);
     }catch(e) {
-        // alert(e.message);
     }
 }
 
