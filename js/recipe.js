@@ -3,16 +3,12 @@ window.addEventListener('load', init);
 function init(){
     let id = getParam('id');
     let title, cookImg, processes, materials;
-    document.getElementById('header_image').addEventListener('click', function() {
-        window.location.href = `./index.html`;
-        window.open(`./index.html`);
-    });
     $.ajax({
         url: 'js/recipes.json',
         type: 'GET',
         contentType: 'application/json',
         success: function(data) { 
-            // data = JSON.parse(data);
+            data = JSON.parse(data);
             title = data[id]['title'];
             cookImg = data[id]['cookImg'];
             processes = data[id]['processes'];
@@ -27,6 +23,10 @@ function init(){
         complete: function() { 
             console.log('ajax finish');
         }
+    });
+    document.getElementById('header_image').addEventListener('click', function() {
+        window.location.href = `./index.html`;
+        window.open(`./index.html`);
     });
 }
 
