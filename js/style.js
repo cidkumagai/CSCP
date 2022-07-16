@@ -1,39 +1,35 @@
 window.addEventListener('load', init);
 
 function init() {
-    $.ajax({
-      // url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
-      url: 'js/recipes.json',
-      type: 'GET',
-      contentType: 'application/json',
-      success: function(data) { 
-        // data = JSON.parse(data);
-        for(let i = 0; i < data.length; i++) {
-          title = data[i]['title'];
-          cookImg = data[i]['cookImg'];
-          comment = data[i]['comment'];
-          // console.log(`${title}${cookImg}${comment}`);
-          createElement(cookImg, title, comment, i);
-        }
-        createPageNation();
-      },
-      error: function(XMLHttpRequest, textStatus, errorThrown){
-        console.log("XMLHttpRequest : " + XMLHttpRequest.status);
-        console.log("textStatus     : " + textStatus);
-        console.log("errorThrown    : " + errorThrown.message);
-      },
-      complete: function() { 
-        console.log('ajax finish');
+  $.ajax({
+    // url: 'http://kumachen.html.xdomain.jp/CSCP/js/recipes.json',
+    url: 'js/recipes.json',
+    type: 'GET',
+    contentType: 'application/json',
+    success: function(data) { 
+      for(let i = 0; i < data.length; i++) {
+        title = data[i]['title'];
+        cookImg = data[i]['cookImg'];
+        comment = data[i]['comment'];
+        createElement(cookImg, title, comment, i);
       }
-    });
+      createPageNation();
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown){
+      console.log("XMLHttpRequest : " + XMLHttpRequest.status);
+      console.log("textStatus     : " + textStatus);
+      console.log("errorThrown    : " + errorThrown.message);
+    },
+    complete: function() { 
+      console.log('ajax finish');
+    }
+  });
 }
 
 function pageTransition(e) {
     try {
-        // location.href = `http://kumachen.html.xdomain.jp/CSCP/recipe.html?id=${e.path[0].id}`;
-        window.location.href = `./recipe.html?id=${e.target.id}`;
-        // window.location.href = 'パス名'; // 通常の遷移
-        window.open(`./recipe.html?id=${e.target.id}`, '_blank'); // 新しいタブを開き、ページを表示
+      window.location.href = `./recipe.html?id=${e.target.id}`;
+      window.open(`./recipe.html?id=${e.target.id}`);
     }catch(e) {
         // alert(e.message);
     }
